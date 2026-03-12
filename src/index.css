@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-andar-bg text-andar-text font-sans antialiased selection:bg-andar-primary selection:text-white;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+
+  /* Glassmorphism utilities */
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .glass-card {
+    @apply bg-andar-card/80 backdrop-blur-sm border border-white/5 rounded-2xl transition-all duration-300 hover:border-andar-primary/50 hover:bg-andar-card;
+  }
+
+  .btn-primary {
+    @apply bg-andar-primary hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full inline-flex items-center justify-center transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply border border-white/20 hover:border-white/50 bg-transparent text-white font-medium py-2 px-4 rounded-lg inline-flex items-center justify-center transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-andar-secondary to-andar-primary;
+  }
+}
+
+/* Base state for scroll animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays for children elements if needed */
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
