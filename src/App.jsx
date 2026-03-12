@@ -343,33 +343,34 @@ function App() {
             <p className="text-slate-500">O caminho para sua tranquilidade em 3 etapas simples.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16 pointer-events-auto">
-            <div className="flex flex-col items-center gap-4 reveal delay-100">
-              <div className="w-20 h-20 rounded-2xl bg-andar-primary/10 border border-andar-primary/20 flex items-center justify-center text-andar-primary mb-2">
-                <FileText className="w-8 h-8" />
+          <div className="relative max-w-5xl mx-auto mb-16 pointer-events-auto">
+            {/* Dashed line connecting icons */}
+            <div className="hidden md:block absolute top-10 left-[16.6%] right-[16.6%] h-px border-t border-dashed border-andar-primary/30 z-0"></div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+              <div className="flex flex-col items-center gap-4 reveal delay-100">
+                <div className="w-20 h-20 rounded-2xl bg-andar-primary/10 border border-andar-primary/20 flex items-center justify-center text-andar-primary mb-2 shadow-[0_0_20px_rgba(13,127,242,0.1)]">
+                  <FileText className="w-8 h-8" />
+                </div>
+                <h4 className="font-semibold text-xl text-white">1. Enviar Dados (PDF)</h4>
+                <p className="text-slate-500 text-sm px-4">Carregue sua apólice atual de forma segura e criptografada.</p>
               </div>
-              <h4 className="font-semibold text-xl text-white">1. Enviar Dados (PDF)</h4>
-              <p className="text-slate-500 text-sm px-4">Carregue sua apólice atual de forma segura e criptografada.</p>
-            </div>
 
-            <div className="hidden md:block absolute top-[200px] left-[33%] w-[10%] h-[1px] bg-transparent border-t border-dashed border-andar-primary/30 z-0"></div>
-
-            <div className="flex flex-col items-center gap-4 reveal delay-200">
-              <div className="w-20 h-20 rounded-2xl bg-andar-primary/10 border border-andar-primary/20 flex items-center justify-center text-andar-primary mb-2">
-                <Brain className="w-8 h-8" />
+              <div className="flex flex-col items-center gap-4 reveal delay-200">
+                <div className="w-20 h-20 rounded-2xl bg-andar-primary/10 border border-andar-primary/20 flex items-center justify-center text-andar-primary mb-2 shadow-[0_0_20px_rgba(13,127,242,0.1)]">
+                  <Brain className="w-8 h-8" />
+                </div>
+                <h4 className="font-semibold text-xl text-white">2. Análise por IA</h4>
+                <p className="text-slate-500 text-sm px-4">Nossa tecnologia de ponta cruza informações e identifica gaps.</p>
               </div>
-              <h4 className="font-semibold text-xl text-white">2. Análise por IA</h4>
-              <p className="text-slate-500 text-sm px-4">Nossa tecnologia de ponta cruza informações e identifica gaps.</p>
-            </div>
 
-            <div className="hidden md:block absolute top-[200px] right-[33%] w-[10%] h-[1px] bg-transparent border-t border-dashed border-andar-primary/30 z-0"></div>
-
-            <div className="flex flex-col items-center gap-4 reveal delay-300">
-              <div className="w-20 h-20 rounded-2xl bg-andar-primary/10 border border-andar-primary/20 flex items-center justify-center text-andar-primary mb-2">
-                <ShieldCheck className="w-8 h-8" />
+              <div className="flex flex-col items-center gap-4 reveal delay-300">
+                <div className="w-20 h-20 rounded-2xl bg-andar-primary/10 border border-andar-primary/20 flex items-center justify-center text-andar-primary mb-2 shadow-[0_0_20px_rgba(13,127,242,0.1)]">
+                  <ShieldCheck className="w-8 h-8" />
+                </div>
+                <h4 className="font-semibold text-xl text-white">3. Receber Diagnóstico</h4>
+                <p className="text-slate-500 text-sm px-4">Relatório detalhado com plano de ação imediato.</p>
               </div>
-              <h4 className="font-semibold text-xl text-white">3. Receber Diagnóstico</h4>
-              <p className="text-slate-500 text-sm px-4">Relatório detalhado com plano de ação imediato.</p>
             </div>
           </div>
 
