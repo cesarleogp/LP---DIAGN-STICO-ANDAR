@@ -392,7 +392,7 @@ function App() {
           <div className="max-w-4xl mx-auto bg-slate-900/60 backdrop-blur-md border border-andar-primary/30 rounded-[24px] p-8 md:p-14 relative mt-16 shadow-[0_0_40px_rgba(13,127,242,0.1)]">
             
             <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-andar-bg border-2 border-andar-primary/30 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(13,127,242,0.3)] z-10">
-              <Scale className="w-8 h-8 text-andar-primary" />
+              <img src="/speedometer.svg" className="w-10 h-10" alt="Velocímetro" />
             </div>
 
             <div className="text-center relative z-10 mt-8 mb-12">
@@ -406,8 +406,6 @@ function App() {
                 <div className="bg-red-500 h-full w-[40%]" />
                 <div className="bg-yellow-400 h-full w-[30%]" />
                 <div className="bg-green-500 h-full w-[30%]" />
-                {/* Visual marker */}
-                <div className="absolute h-10 w-1 bg-white left-[33%] top-1/2 -translate-y-1/2 shadow-lg z-10" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
